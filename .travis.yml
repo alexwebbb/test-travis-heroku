@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - node
+- node
+deploy:
+  provider: heroku
+  api_key:
+    secure: JhlCvpjBDn6UL0j58GHZl469bj7XgulAnkBlEphWaMr7A7N+26UCi9R0kj5FugzlJfPDzUsuBGq8+/7uizU9VWMOXpFADeDlaC8rOVvaTmW2w3Wm2zqaLr5pJa+jydcVfqz5YvMsvxvwrh1FpMPWOb74Wss6r8llWTpPqxrh1nckoCGAVAgf3wpfJhfKQ1fj0/IPXdsop34fKaX6bQQA+lEF6O+3lmPH1zjyjFj3R8d8BVxDrEI6UlYIKzX7vq4IfpUQCYU5KfbFNSPz6bUN4vOTnQEcZhCEXvryDQGDUTmNOPiA0q6dVyl3U7jxrkOzQEi9lN0HxT6f2HZkaFIF34TJd+pidFiJgmuLz3ax+o8Y+l1mp/JmFhbCejFpBhWvgU8p6dWiWDWvhG/acOKJtKp7w+Xri4fd9KzPLBrDJfLDGr6FnEDMDMi+AgmFxVrsYH5gOiPENKvIW/QJlkVmpfEiS+SRh5I4XoqxROsIzbEuXba2we685AnKvkbHdtVraEk6/HeJagG73BQdV9rsTPZJoyMxqR/z6V4IzbTTUxoIS/oPF4b1v4vDVFS9utuU2ieAxlkcAW/Z+yABQBkEzbehyjYpCkb6vCagXt1UkDufvyVOF+NVlme4VNG9AViIkuN40ke7LMlV1zwlLQ2VeRCefN5suupQ9JiHn7BLxUE=
+  app: test-travis-heroku
+  on:
+    repo: alexwebbb/test-travis-heroku
